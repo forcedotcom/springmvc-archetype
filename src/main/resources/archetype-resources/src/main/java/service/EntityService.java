@@ -60,6 +60,15 @@ public class EntityService {
 		return entity;
 
 	}
-
+	
+	@Transactional
+	public boolean delete(String entityId) {
+		MyEntity entity = em.find(MyEntity.class, entityId);
+		if(entity==null) {
+			return false;
+		}
+		em.remove(entity);
+		return true;
+	}
 
 }
