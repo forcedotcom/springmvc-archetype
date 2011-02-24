@@ -9,6 +9,19 @@
 
   <name>springmvc-archetype</name>
 
+  <distributionManagement>
+    <repository>
+      <id>force.repo</id>
+      <name>Force.com Repository</name>
+      <url>${force.repo.url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>force.repo.snapshot</id>
+      <name>Force.com Snapshot Repository</name>
+      <url>${force.repo.snapshot.url}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <build>
     <extensions>
       <extension>

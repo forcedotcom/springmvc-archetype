@@ -22,6 +22,7 @@
       <includes>
         <include>**/*.jsp</include>
         <include>**/*.xml</include>
+	<include>**/*.tag</include>
       </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
@@ -36,7 +37,6 @@
       <includes>
         <include>**/*.MF</include>
         <include>**/*.png</include>
-        <include>**/*.tag</include>
         <include>**/*.css</include>
       </includes>
     </fileSet>
