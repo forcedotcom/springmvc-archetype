@@ -6,9 +6,9 @@ package ${package}.model;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-#if ( ${enableEntity} == "true" )
 import javax.persistence.Entity;
 
+#if ( ${enableEntity} == "true" )
 @Entity
 #else
 // The @Entity annotation is commented out in this template, so you can compile
