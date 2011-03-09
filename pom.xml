@@ -4,7 +4,7 @@
 
   <groupId>com.force.sdk</groupId>
   <artifactId>springmvc-archetype</artifactId>
-  <version>21.0.0-BETA</version>
+  <version>21.0.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>springmvc-archetype</name>
