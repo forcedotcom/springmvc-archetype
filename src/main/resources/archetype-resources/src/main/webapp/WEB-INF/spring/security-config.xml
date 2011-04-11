@@ -29,13 +29,13 @@
 		<!--  Uncomment this section to enable security -->
 
 #if ( ${enableSecurity} == "true" )
-            <security:intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
+	    <security:intercept-url pattern="/**" access="isAuthenticated()" />
 #else
                 <!--  Uncomment this section to enable security -->
 
 
 		<!-- 
-	    <security:intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
+	    <security:intercept-url pattern="/**" access="isAuthenticated()" />
 		 -->
 #end
 
