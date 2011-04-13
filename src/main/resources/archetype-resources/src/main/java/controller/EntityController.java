@@ -37,11 +37,13 @@ public class EntityController {
 	public ModelAndView view(ModelAndView mv, @ModelAttribute("entity") MyEntity entity) {
 		mv.addObject("entity", entity);
 		mv.setViewName("entity_detail");
+		logger.info("requesting /myentity");
 		return mv;
 	}
 
 	@RequestMapping(value="/myentity/{id}", method=RequestMethod.POST)
 	public String update(ModelAndView mv, @ModelAttribute("entity") MyEntity entity) {
+	    	logger.info("updating /myentity");
 		return "redirect:/myentity/"+entityService.save(entity).getId();
 	}
 }

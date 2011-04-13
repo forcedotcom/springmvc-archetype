@@ -141,11 +141,6 @@
 		</dependency>
 		<dependency>
 			<groupId>com.force.sdk</groupId>
-			<artifactId>force-oauth</artifactId>
-			<version>${force.sdk.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.force.sdk</groupId>
 			<artifactId>force-springsecurity</artifactId>
 			<version>${force.sdk.version}</version>
 		</dependency>

@@ -21,7 +21,7 @@ import com.sforce.ws.ConnectionException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/app-context.xml")
-public class MusicLibIT {
+public class SampleTest {
 
 	@Inject
 	private EntityService entityService;

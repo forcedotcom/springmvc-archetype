@@ -56,7 +56,7 @@ public class EntityService {
 		} else {
 			em.persist(entity);
 		}
-
+		logger.info("entity saved: " + em);
 		return entity;
 
 	}
