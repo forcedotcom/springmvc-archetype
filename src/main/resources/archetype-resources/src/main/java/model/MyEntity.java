@@ -8,16 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Entity;
 
-#if ( ${enableEntity} == "true" )
 @Entity
-#else
-// The @Entity annotation is commented out in this template, so you can compile
-// and run the project without creating any new entities in your database. We suggest
-// you rename this class and make other modifications, then uncomment the @Entity
-// annotation and test it out.
-
-//@Entity
-#end
 public class MyEntity {
 
 	// The Force.com JPA provider only supports annotating fields. Don't annotate
