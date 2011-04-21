@@ -21,7 +21,7 @@ import com.sforce.ws.ConnectionException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/app-context.xml")
-public class SampleTest {
+public class BasicCRUDIT {
 
 	@Inject
 	private EntityService entityService;
@@ -30,18 +30,7 @@ public class SampleTest {
 	private ForceServiceConnector connector;
 	
 	@Test
-	public void testFindEntityWithNewAsId() {
-		
-		// MusicService currently allows this. It expects a null return value.
-		MyEntity entity = entityService.findEntity("new");
-		assertNotNull(entity);
-		assertNull(entity.getId());
-	}
-
-	@Test
 	public void testEntityCRUD() {
-		
-		// MusicService currently allows this. It expects a null return value.
 		
 		String entityId = null;
 
