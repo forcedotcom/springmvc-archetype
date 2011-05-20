@@ -11,7 +11,7 @@
 
 <jsp:body>
 <h1>A Basic Database.com Java Web App</h1>
-This template project consists of
+This template project consists of:
 <ul>
 <li>A standard Spring MVC project structure augmented with the Database.com JPA provider</li>
 <li>A simple <code>HomeController</code> class that shows this page</li> 
@@ -20,6 +20,6 @@ This template project consists of
 <li>A sample model JPA entity called <code>MyEntity</code></li>
 <li>A few JSP pages that renders the views with <code>template.tag</code> template file and <code>layout.css</code>
 </ul>
-<p><a href="myentity/new">New Entity</a></p>
+<p><a href="myentity/new">Create a <code>MyEntity</code> Record</a></p>
 </jsp:body>
 </tags:template>
