@@ -9,7 +9,7 @@
 
 <tags:template>
 
-	<jsp:attribute name="breadcrumb"><a href="..">Home</a> / <a href=".">MyEntity</a> / ${symbol_dollar}{entity.name}</jsp:attribute>
+	<jsp:attribute name="breadcrumb"><a href="..">Home</a> / <a href="./new">MyEntity</a> / ${symbol_dollar}{entity.name}</jsp:attribute>
 	<jsp:body>
 		<form:form commandName="entity">
 		<table>
