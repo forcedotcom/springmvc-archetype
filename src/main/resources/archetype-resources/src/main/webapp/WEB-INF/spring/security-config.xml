@@ -26,13 +26,10 @@
 
 	    <security:anonymous />
 
-		<!--  Uncomment this section to enable security -->
-
 #if ( ${enableSecurity} == "true" )
 	    <security:intercept-url pattern="/**" access="isAuthenticated()" />
 #else
-                <!--  Uncomment this section to enable security -->
-
+		<!--  Uncomment this section to enable security -->
 
 		<!-- 
 	    <security:intercept-url pattern="/**" access="isAuthenticated()" />
