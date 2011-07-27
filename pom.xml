@@ -2,26 +2,65 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
   <groupId>com.force.sdk</groupId>
   <artifactId>springmvc-archetype</artifactId>
-  <version>22.0.1-BETA</version>
+  <version>22.0.2-BETA</version>
   <packaging>maven-archetype</packaging>
-
   <name>springmvc-archetype</name>
-
+  <description>Spring MVC Project with Database.com Support</description>
+  <url>http://www.force.com/</url>
+  <licenses>
+    <license>
+      <name>BSD License (BSD 3-Clause)</name>
+      <url>https://github.com/forcedotcom/java-sdk/blob/master/build-tools/src/main/resources/license/header.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/forcedotcom/springmvc-archetype/</url>
+    <connection>scm:git@github.com:forcedotcom/springmvc-archetype.git</connection>
+    <developerConnection>scm:git@github.com:forcedotcom/springmvc-archetype.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+  <developers>
+    <!-- see mailing list -->
+    <developer>
+      <id>mailingList</id>
+      <name>mailingList</name>
+      <email>seemailinglist@force.com</email>
+    </developer>
+  </developers>
+  <mailingLists>
+    <mailingList>
+      <name>Database.com SDK for Java Issues</name>
+      <archive>https://github.com/forcedotcom/java-sdk/issues?state=closed</archive>
+      <subscribe>https://github.com/forcedotcom/java-sdk/toggle_watch</subscribe>
+      <unsubscribe>https://github.com/forcedotcom/java-sdk/toggle_watch</unsubscribe>
+      <post>https://github.com/forcedotcom/java-sdk/issues/new</post>
+    </mailingList>
+  </mailingLists>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/forcedotcom/java-sdk/issues/new</url>
+  </issueManagement>
   <distributionManagement>
     <repository>
-      <id>force.repo</id>
-      <name>Force.com Repository</name>
-      <url>${force.repo.url}</url>
+      <id>sonatype-nexus-staging</id>
+      <name>Sonatype Nexus Staging</name>
+      <url>${nexus.url.staging}</url>
     </repository>
     <snapshotRepository>
-      <id>force.repo.snapshot</id>
-      <name>Force.com Snapshot Repository</name>
-      <url>${force.repo.snapshot.url}</url>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>${nexus.url.snapshots}</url>
     </snapshotRepository>
   </distributionManagement>
-
   <build>
     <extensions>
       <extension>
