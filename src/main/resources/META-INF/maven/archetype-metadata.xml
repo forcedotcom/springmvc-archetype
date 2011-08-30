@@ -50,6 +50,7 @@
       <directory></directory>
       <includes>
         <include>.gitignore</include>
+        <include>Procfile</include>
       </includes>
     </fileSet>
   </fileSets>

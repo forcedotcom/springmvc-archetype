@@ -1,0 +1,1 @@
+web:    java $JAVA_OPTS -jar deploy/jetty-runner.jar --port $PORT deploy/webapp.war
