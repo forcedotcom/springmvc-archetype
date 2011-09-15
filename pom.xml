@@ -10,7 +10,7 @@
 
   <groupId>com.force.sdk</groupId>
   <artifactId>springmvc-archetype</artifactId>
-  <version>22.0.5-BETA</version>
+  <version>22.0.7-BETA</version>
   <packaging>maven-archetype</packaging>
   <name>springmvc-archetype</name>
   <description>Spring MVC Project with Database.com Support</description>
